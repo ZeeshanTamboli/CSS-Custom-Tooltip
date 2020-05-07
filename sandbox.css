@@ -70,3 +70,31 @@
   border-left-width: 0;
   transform: translateY(-50%);
 }
+
+.tooltip.bottom::before {
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.bottom::after {
+  border-bottom-color: #363f4c;
+  top: 100%;
+  left: 50%;
+  border-top-width: 0;
+  transform: translateX(-50%);
+}
+
+.tooltip.left::before {
+  right: calc(100% + 5px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.left::after {
+  top: 50%;
+  right: 100%;
+  border-left-color: #363f4c;
+  border-right-width: 0;
+  transform: translateY(-50%);
+}
